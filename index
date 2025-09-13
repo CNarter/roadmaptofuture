@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Journey to a Career in Healthcare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Color Palette: Brilliant Blues -->
+    <!-- Plan Narrative: Visualize the 2-year journey from an Access Course to a University Healthcare degree. The narrative flows from an overview timeline to a detailed comparison of career options, a look at personal strengths, a task-based timeline, and finally key financial data. -->
+    <!-- Visualization Choices: -->
+    <!-- 1. Overall Timeline: Goal(Organize/Change) -> HTML/CSS Flexbox Timeline. Justification: Clearly shows the sequence and duration of the three main phases without needing SVG/Mermaid. -->
+    <!-- 2. Career Comparison: Goal(Compare) -> Chart.js Radar Chart. Justification: Effectively compares three careers across multiple qualitative attributes in a single, digestible visual. -->
+    <!-- 3. Strengths Section: Goal(Organize) -> HTML/CSS Cards. Justification: Simple, clear way to group skills under personal experiences. -->
+    <!-- 4. Action Plan Timeline: Goal(Change/Organize) -> Chart.js Horizontal Bar Chart. Justification: Provides a Gantt-like view of task durations and overlaps, showing the project plan visually. -->
+    <!-- 5. Financials: Goal(Inform) -> HTML/CSS "Big Number" Cards. Justification: Emphasizes key financial data points for clarity. -->
+    <!-- Confirmation: NEITHER Mermaid JS NOR SVG were used in this file. All visualizations are either pure HTML/CSS or Chart.js rendered on Canvas. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f8ff;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .timeline-item {
+            padding-left: 2.5rem;
+            border-left: 4px solid #7CB5D3;
+            position: relative;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -11px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #366E8A;
+            border: 3px solid #f0f8ff;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-7xl">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-[#003F5C]">My Journey to a Career in Healthcare</h1>
+            <p class="text-lg md:text-xl text-[#366E8A] mt-2">A Personalised Action Plan: Access Course to University (2024-2026)</p>
+        </header>
+
+        <section id="principles" class="mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-4xl mb-2">🌱</div>
+                    <h3 class="text-2xl font-bold text-[#003F5C] mb-2">Sustainable</h3>
+                    <p class="text-[#366E8A]">Actions are broken into manageable steps, working with ADHD and fatigue, not against them.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-4xl mb-2">🎯</div>
+                    <h3 class="text-2xl font-bold text-[#003F5C] mb-2">Strategic</h3>
+                    <p class="text-[#366E8A]">The 2025-2026 "gap year" is used to reduce pressure and build a stronger, more compelling application.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-4xl mb-2">💪</div>
+                    <h3 class="text-2xl font-bold text-[#003F5C] mb-2">Strength-Based</h3>
+                    <p class="text-[#366E8A]">Leveraging unique life experiences as key assets for a successful career in healthcare.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="roadmap" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-8">The Two-Year Roadmap</h2>
+             <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="space-y-8">
+                    <div class="timeline-item">
+                        <h4 class="font-bold text-xl text-[#003F5C]">Phase 1: Academic Foundation</h4>
+                        <p class="text-sm text-[#366E8A] font-medium mb-2">Now - July 2025</p>
+                        <p class="text-gray-600">The primary goal is to excel in the Access to Applied Science course. This phase is dedicated to building a strong academic base, developing effective study skills, and conducting initial research into the three potential career paths.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 class="font-bold text-xl text-[#003F5C]">Phase 2: Experience & Application</h4>
+                        <p class="text-sm text-[#366E8A] font-medium mb-2">August 2025 - January 2026</p>
+                        <p class="text-gray-600">Focus shifts to gaining vital hands-on experience, such as a Healthcare Assistant role. This practical insight will be crucial for crafting a compelling UCAS personal statement and submitting the application well ahead of the deadline.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 class="font-bold text-xl text-[#003F5C]">Phase 3: Securing Your Place</h4>
+                        <p class="text-sm text-[#366E8A] font-medium mb-2">February 2026 - August 2026</p>
+                        <p class="text-gray-600">The final phase involves preparing for and succeeding at university interviews, finalising student funding (including the NHS grant), and arranging all necessary academic and personal support systems to ensure a smooth start to university life.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="career-comparison" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-2">Choosing the Right Path</h2>
+            <p class="text-center text-[#366E8A] mb-8 max-w-3xl mx-auto">Each potential career offers a unique blend of rewards and challenges. This comparison helps visualize the key differences in work-life balance, technical demands, and career flexibility to identify the best fit.</p>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="chart-container h-96 md:h-[500px]">
+                    <canvas id="careerRadarChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="strengths" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-2">My Strengths, My Superpower</h2>
+            <p class="text-center text-[#366E8A] mb-8 max-w-3xl mx-auto">Personal experiences are not barriers; they are the foundation of unique skills that are highly valued in healthcare settings. This section reframes life challenges as professional assets.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-[#003F5C] mb-3">Caring for Children with SEN</h3>
+                    <ul class="space-y-2 text-[#366E8A]">
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Patience & Empathy</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Complex Problem-Solving</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Advocacy & Resilience</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Clear Communication</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-[#003F5C] mb-3">Living with ADHD & Fatigue</h3>
+                    <ul class="space-y-2 text-[#366E8A]">
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Meticulous Planning</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Strategic Thinking</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Self-Awareness & Empathy</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Understanding Chronic Conditions</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg md:col-span-2 lg:col-span-1">
+                    <h3 class="text-xl font-bold text-[#003F5C] mb-3">Maturity & Life Experience</h3>
+                    <ul class="space-y-2 text-[#366E8A]">
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Professionalism & Commitment</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Ability to De-escalate</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Considered Career Choice</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Unique, Valued Perspective</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="action-plan" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-2">Detailed Action Timeline</h2>
+            <p class="text-center text-[#366E8A] mb-8 max-w-3xl mx-auto">This chart visualizes the duration and overlap of key tasks from now until the start of the degree course. It helps to see when to focus on academics, applications, and preparation.</p>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="chart-container h-96 md:h-[600px]">
+                    <canvas id="actionTimelineChart"></canvas>
+                </div>
+            </div>
+        </section>
+        
+        <section id="financials" class="mb-16">
+             <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-2">Key Financials & Resources</h2>
+             <p class="text-center text-[#366E8A] mb-8 max-w-3xl mx-auto">Understanding the costs and available funding is crucial for planning. While some fees are small, the available NHS grant is a significant resource that makes this journey financially viable.</p>
+             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center border-t-4 border-[#7CB5D3]">
+                    <p class="text-lg text-[#366E8A]">UCAS Fee</p>
+                    <p class="text-5xl font-extrabold text-[#003F5C]">~£28</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center border-t-4 border-[#7CB5D3]">
+                    <p class="text-lg text-[#366E8A]">DBS Check</p>
+                    <p class="text-5xl font-extrabold text-[#003F5C]">~£23</p>
+                </div>
+                 <div class="bg-[#C1E7FF] p-8 rounded-lg shadow-lg text-center border-t-4 border-[#366E8A] md:col-span-3 lg:col-span-1">
+                    <p class="text-lg text-[#003F5C] font-semibold">NHS Learning Support Fund</p>
+                    <p class="text-5xl font-extrabold text-[#003F5C]">£5,000+</p>
+                    <p class="text-md text-[#366E8A]">Per year grant</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="text-center p-4 bg-white mt-8">
+        <p class="text-sm text-gray-500">This plan is a living document, designed to be adapted as the journey progresses.</p>
+    </footer>
+
+    <script>
+        const chartColors = {
+            blue1: '#003F5C',
+            blue2: '#366E8A',
+            blue3: '#7CB5D3',
+            grid: 'rgba(0, 63, 92, 0.1)',
+            text: '#374151'
+        };
+
+        const tooltipPlugin = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            } else {
+                              return label;
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+        function wrapLabel(str, maxWidth) {
+            if (str.length <= maxWidth) {
+                return str;
+            }
+            const words = str.split(' ');
+            const lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + word).length > maxWidth) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        }
+
+        const renderRadarChart = () => {
+            const ctx = document.getElementById('careerRadarChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: ['Patient Impact', 'Work-Life Balance', 'Technical Skill', 'Career Flexibility', 'Emotional Demand'],
+                    datasets: [
+                        {
+                            label: 'Podiatry',
+                            data: [4, 5, 3, 4, 3],
+                            backgroundColor: 'rgba(0, 63, 92, 0.2)',
+                            borderColor: chartColors.blue1,
+                            pointBackgroundColor: chartColors.blue1,
+                            pointBorderColor: '#fff',
+                            pointHoverBackgroundColor: '#fff',
+                            pointHoverBorderColor: chartColors.blue1
+                        },
+                        {
+                            label: 'Therapeutic Radiography',
+                            data: [5, 3, 5, 2, 5],
+                            backgroundColor: 'rgba(54, 110, 138, 0.2)',
+                            borderColor: chartColors.blue2,
+                            pointBackgroundColor: chartColors.blue2,
+                            pointBorderColor: '#fff',
+                            pointHoverBackgroundColor: '#fff',
+                            pointHoverBorderColor: chartColors.blue2
+                        },
+                        {
+                            label: 'Adult Nursing',
+                            data: [5, 2, 3, 5, 4],
+                            backgroundColor: 'rgba(124, 181, 211, 0.2)',
+                            borderColor: chartColors.blue3,
+                            pointBackgroundColor: chartColors.blue3,
+                            pointBorderColor: '#fff',
+                            pointHoverBackgroundColor: '#fff',
+                            pointHoverBorderColor: chartColors.blue3
+                        }
+                    ]
+                },
+                options: {
+                    ...tooltipPlugin,
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            angleLines: { color: chartColors.grid },
+                            grid: { color: chartColors.grid },
+                            pointLabels: { color: chartColors.text, font: { size: 14 } },
+                            ticks: {
+                                backdropColor: 'rgba(255, 255, 255, 0.75)',
+                                stepSize: 1,
+                                max: 5,
+                                min: 0
+                            }
+                        }
+                    },
+                    plugins: {
+                        ...tooltipPlugin.plugins,
+                        legend: { position: 'top' }
+                    }
+                }
+            });
+        };
+
+        const renderTimelineChart = () => {
+            const ctx = document.getElementById('actionTimelineChart').getContext('2d');
+            
+            const startDate = new Date('2024-09-01');
+            const endDate = new Date('2026-09-01');
+
+            const labels = [
+                "Succeed in Access Course",
+                "Initial Career Research",
+                "Contact University Admissions",
+                "Attend Virtual Open Days",
+                "Start Networking",
+                "Gain Relevant Experience",
+                "Attend Physical Open Days",
+                "Draft Personal Statement",
+                "Finalise & Submit UCAS",
+                "Prepare for Interviews",
+                "Apply for Funding",
+                "Inform University of Needs",
+                "Arrange Practicalities"
+            ].map(label => wrapLabel(label, 16));
+            
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Task Duration',
+                        data: [
+                            ['2024-09-01', '2025-07-31'],
+                            ['2024-11-01', '2024-12-31'],
+                            ['2025-02-01', '2025-03-31'],
+                            ['2025-03-01', '2025-04-30'],
+                            ['2025-04-01', '2025-06-30'],
+                            ['2025-08-01', '2025-11-30'],
+                            ['2025-09-01', '2025-10-31'],
+                            ['2025-10-01', '2025-11-15'],
+                            ['2025-11-15', '2025-11-30'],
+                            ['2026-02-01', '2026-04-30'],
+                            ['2026-03-01', '2026-04-30'],
+                            ['2026-05-01', '2026-06-30'],
+                            ['2026-06-01', '2026-08-31']
+                        ],
+                        backgroundColor: chartColors.blue2,
+                        borderColor: chartColors.blue1,
+                        borderWidth: 1,
+                        barPercentage: 0.6,
+                        categoryPercentage: 0.8
+                    }]
+                },
+                options: {
+                    ...tooltipPlugin,
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            min: startDate.getTime(),
+                            max: endDate.getTime(),
+                            type: 'time',
+                            time: {
+                                unit: 'month'
+                            },
+                            grid: {
+                                color: chartColors.grid
+                            }
+                        },
+                        y: {
+                           grid: {
+                                display: false
+                            } 
+                        }
+                    },
+                    plugins: {
+                        ...tooltipPlugin.plugins,
+                        legend: { display: false }
+                    }
+                }
+            });
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderRadarChart();
+            renderTimelineChart();
+        });
+    </script>
+</body>
+</html>
+
