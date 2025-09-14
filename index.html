@@ -6,7 +6,9 @@
     <title>My Journey to a Career in Healthcare</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -27,11 +29,9 @@
         .chart-container {
             position: relative;
             width: 100%;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 300px;
-            max-height: 400px;
+            max-width: 1200px;
+            height: 500px; /* Adjust height as needed */
+            margin: auto;
         }
         @media (min-width: 768px) {
             .chart-container {
@@ -62,6 +62,7 @@
 
         <header class="text-center mb-12">
             <h1 class="text-4xl md:text-6xl font-extrabold text-[#003F5C]">My Journey to a Career in Healthcare</h1>
+            <br><br>
             <p class="text-lg md:text-xl text-[#366E8A] mt-2">A Personalised Action Plan: Applied Science, Access Course at Brighton MET to a BSc course in a local University (September 2025 - September 2026)</p>
         </header>
 
@@ -82,6 +83,51 @@
                     <h3 class="text-2xl font-bold text-[#003F5C] mb-2">Existing strengths and preferences</h3>
                     <p class="text-[#366E8A]">I have extensive work and life experiences. I also know myself well and understand the circumstances and environments in which I can do my best work.</p>
                 </div>
+            </div>
+        </section>
+         <section id="strengths" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-2">Existing Strengths</h2>
+            <p class="text-center text-[#366E8A] mb-8 max-w-3xl mx-auto">Framing my existing skills and experience and thinking about how these can be transferred onto a healthcare profession.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg md:col-span-4 lg:col-span-2">
+                    <h3 class="text-xl font-bold text-[#003F5C] mb-3">Professional Skills and Experience</h3>
+                    <ul class="space-y-2 text-[#366E8A]">
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Digital Project Management experience and a level 3 Qualification</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Decades of experience of People Management, Running and developing Services and Operations-level Administration including systems and policies</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Technically strong - Basic Software Development skills and 5 years+ in tech industries</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>DE&I knowledge from a year helping people team leaders to use an Applicant Tracking System, focused on improving equity in hiring</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>10 years+ in Financial Services</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg md:col-span-4 lg:col-span-2">
+                    <h3 class="text-xl font-bold text-[#003F5C] mb-3">Life Experience</h3>
+                    <ul class="space-y-2 text-[#366E8A]">
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Professionalism & Commitment</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Measured, professional approach to relationship development, including effective negotiation and creative problem solving</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Highly organised, punctual, reliable and responsible</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Excellent decision making skills. Autonomous, Independant, and Tenacious</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg md:col-span-4 lg:col-span-2">
+                    <h3 class="text-xl font-bold text-[#003F5C] mb-3">Caring for Children with SEN</h3>
+                    <ul class="space-y-2 text-[#366E8A]">
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Patience & Empathy</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Complex Problem-Solving</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Advocacy & Resilience</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Clear Communication</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg md:col-span-4 lg:col-span-2">
+                    <h3 class="text-xl font-bold text-[#003F5C] mb-3">Living with ADHD & Fatigue</h3>
+                    <ul class="space-y-2 text-[#366E8A]">
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Meticulous Planning</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Strategic Thinking</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Self-Awareness & Empathy</li>
+                        <li class="flex items-center"><span class="mr-2">🔹</span>Understanding Chronic Conditions</li>
+                    </ul>
+                </div>
+                
+                
             </div>
         </section>
         
@@ -110,7 +156,7 @@
 
         <section id="career-comparison" class="mb-16">
             <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-2">Choosing the Right Career</h2>
-            <p class="text-center text-[#366E8A] mb-8 max-w-3xl mx-auto">I am considering three different paths, each with different rewards and challenges. Making a comparison here, helps me to visualize the key differences in the courses, and importantly, in the sustainability of the subsequent career, including the work-life balance, technical demands, and career flexibility to identify the best fit.</p>
+            <p class="text-center text-[#366E8A] mb-8 max-w-3xl mx-auto">I was considering three different paths, each with different rewards and challenges. Making a comparison here, along five axis that are important to me, has helped me visualize the key differences in the courses, and importantly, in the sustainability of the subsequent career paths. I have rated 1-5  with one being lowest/worst and 5 being the highest/best. Working through this excercise shows me that Podiatry is the the best fit, mainly for the flexibility and work/life balance.</p>
             <div class="bg-white p-6 rounded-lg shadow-lg">
                 <div class="chart-container h-96 md:h-[500px]">
                     <canvas id="careerRadarChart"></canvas>
@@ -118,76 +164,52 @@
             </div>
         </section>
 
-        <section id="strengths" class="mb-16">
-            <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-2">My existing strenths Strengths, My Superpower</h2>
-            <p class="text-center text-[#366E8A] mb-8 max-w-3xl mx-auto">Personal experiences are not barriers; they are the foundation of unique skills that are highly valued in healthcare settings. This section reframes life challenges as professional assets.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold text-[#003F5C] mb-3">Caring for Children with SEN</h3>
-                    <ul class="space-y-2 text-[#366E8A]">
-                        <li class="flex items-center"><span class="mr-2">🔹</span>Patience & Empathy</li>
-                        <li class="flex items-center"><span class="mr-2">🔹</span>Complex Problem-Solving</li>
-                        <li class="flex items-center"><span class="mr-2">🔹</span>Advocacy & Resilience</li>
-                        <li class="flex items-center"><span class="mr-2">🔹</span>Clear Communication</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold text-[#003F5C] mb-3">Living with ADHD & Fatigue</h3>
-                    <ul class="space-y-2 text-[#366E8A]">
-                        <li class="flex items-center"><span class="mr-2">🔹</span>Meticulous Planning</li>
-                        <li class="flex items-center"><span class="mr-2">🔹</span>Strategic Thinking</li>
-                        <li class="flex items-center"><span class="mr-2">🔹</span>Self-Awareness & Empathy</li>
-                        <li class="flex items-center"><span class="mr-2">🔹</span>Understanding Chronic Conditions</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg md:col-span-2 lg:col-span-1">
-                    <h3 class="text-xl font-bold text-[#003F5C] mb-3">Maturity & Life Experience</h3>
-                    <ul class="space-y-2 text-[#366E8A]">
-                        <li class="flex items-center"><span class="mr-2">🔹</span>Professionalism & Commitment</li>
-                        <li class="flex items-center"><span class="mr-2">🔹</span>Ability to De-escalate</li>
-                        <li class="flex items-center"><span class="mr-2">🔹</span>Considered Career Choice</li>
-                        <li class="flex items-center"><span class="mr-2">🔹</span>Unique, Perspective</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg md:col-span-3 lg:col-span-3">
-                    <h3 class="text-xl font-bold text-[#003F5C] mb-3">Professional Skills and Experience</h3>
-                    <ul class="space-y-2 text-[#366E8A]">
-                        <li class="flex items-center"><span class="mr-2">🔹</span>Digital Project Management skills and level 3 Qualification</li>
-                        <li class="flex items-center"><span class="mr-2">🔹</span>Management of people, Services and Businesses</li>
-                        <li class="flex items-center"><span class="mr-2">🔹</span>Technically strong - Basic Software Development skills and 5 years+ in tech industries</li>
-                        <li class="flex items-center"><span class="mr-2">🔹</span>DE&I Knowledge from working on ATS focused on improveing equity in hiring</li>
-                        <li class="flex items-center"><span class="mr-2">🔹</span>10 years + in Financial Services</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+       
         
         <section id="action-plan" class="mb-16">
-            <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-2">Detailed Action Timeline</h2>
-            <p class="text-center text-[#366E8A] mb-8 max-w-3xl mx-auto">This chart visualizes the duration and overlap of key tasks from now until the start of the degree course. It helps to see when to focus on academics, applications, and preparation.</p>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <div class="chart-container h-96 md:h-[600px]">
-                    <canvas id="actionTimelineChart"></canvas>
-                </div>
+            <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-2">Action Timeline</h2>
+            <p class="text-center text-[#366E8A] mb-8 max-w-3xl mx-auto">This chart organises my key tasks from now until the start of my degree course.</p>
+            <div class="chart-container">
+        <canvas id="actionTimelineChart"></canvas>
+    </div>
+
             </div>
         </section>
         
-        <section id="financials" class="mb-16">
-             <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-2">Key Financials & Resources</h2>
-             <p class="text-center text-[#366E8A] mb-8 max-w-3xl mx-auto">Understanding the costs and available funding is crucial for planning. While some fees are small, the available NHS grant is a significant resource that makes this journey financially viable.</p>
-             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-lg text-center border-t-4 border-[#7CB5D3]">
-                    <p class="text-lg text-[#366E8A]">UCAS Fee</p>
-                    <p class="text-5xl font-extrabold text-[#003F5C]">~£28</p>
+        <section id="financials" class="mb-16" style="border-left: 50px solid #fff; border-right: 50px solid #fff;">
+             <h2 class="text-2xl font-bold text-center text-[#003F5C] mb-2">Financials</h2>
+             <p class="text-center text-[#366E8A] mb-8 max-w-3xl mx-auto">Costs and available funding</p>
+             <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+                <div class="bg-[#C1E7FF] p-8 rounded-lg shadow-lg text-center border-t-4 border-[#366E8A] flex flex-col justify-center md:col-span-3 lg:col-span-1">
+                    <p class="text-lg text-[#366E8A] font-semibold mb-2">University Fees</p>
+                    <p class="text-5xl font-extrabold text-[#003F5C] mb-2">£9,535</p>
+                    <p class="text-md text-[#366E8A] mb-2">Per year (x3)</p>
+                    <p class="text-5xl font-extrabold text-[#003F5C] mb-2">£28,605</p>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-lg text-center border-t-4 border-[#7CB5D3]">
-                    <p class="text-lg text-[#366E8A]">DBS Check</p>
-                    <p class="text-5xl font-extrabold text-[#003F5C]">~£23</p>
+                <div class="bg-[#C1E7FF] p-8 rounded-lg shadow-lg text-center border-t-4 border-[#7CB5D3] flex flex-col justify-center">
+                    <p class="text-lg text-[#366E8A] font-semibold mb-2">UCAS Fee</p>
+                    <p class="text-5xl font-extrabold text-[#003F5C] mb-2">£28</p>
                 </div>
-                 <div class="bg-[#C1E7FF] p-8 rounded-lg shadow-lg text-center border-t-4 border-[#366E8A] md:col-span-3 lg:col-span-1">
-                    <p class="text-lg text-[#003F5C] font-semibold">NHS Learning Support Fund</p>
-                    <p class="text-5xl font-extrabold text-[#003F5C]">£5,000+</p>
-                    <p class="text-md text-[#366E8A]">Per year grant</p>
+                <div class="bg-[#C1E7FF] p-8 rounded-lg shadow-lg text-center border-t-4 border-[#7CB5D3] flex flex-col justify-center">
+                    <p class="text-lg text-[#366E8A] font-semibold mb-2">DBS Check</p>
+                    <p class="text-5xl font-extrabold text-[#003F5C] mb-2">£23</p>
+                </div>
+                <div class="bg-[#C1E7FF] p-8 rounded-lg shadow-lg text-center border-t-4 border-[#7CB5D3] flex flex-col justify-center">
+                    <p class="text-lg text-[#366E8A] font-semibold mb-2">Access Course fees</p>
+                    <p class="text-5xl font-extrabold text-[#003F5C] mb-2">£3,384</p>
+                </div>
+                <div class="bg-[#C1E7FF] p-8 rounded-lg shadow-lg text-center border-t-4 border-[#366E8A] flex flex-col justify-center md:col-span-3 lg:col-span-1">
+                    <p class="text-lg text-[#003F5C] font-semibold mb-2">NHS Learning Support Fund</p>
+                    <p class="text-5xl font-extrabold text-[#003F5C] mb-2">~£5,000</p>
+                    <p class="text-md text-[#366E8A] mb-2">Per year grant (x3)</p>
+                    <p class="text-5xl font-extrabold text-[#003F5C] mb-2">~£15,000</p>
+                </div>
+                <!-- Total Section -->
+                <div class="bg-[#C1E7FF] p-8 rounded-lg shadow-lg text-center border-t-4 border-[#003F5C] flex flex-col justify-center col-span-5 md:col-span-5 lg:col-span-5 mt-4" style="border-left: 50px solid #fff; border-right: 50px solid #fff;">
+                    <p class="text-2xl text-[#003F5C] font-bold mb-2">Estimated Total Cost (3 years)</p>
+                    <p class="text-4xl font-extrabold text-[#003F5C] mb-2">£17,040</p>
+                    <p class="text-md text-[#366E8A]">University Fees (£28,605) + Access Course (£3,384) + UCAS Fee (£28) + DBS Check (£23) <br>
+            <span class="font-semibold text-[#366E8A]">NHS Learning Support Fund: ~£15,000 grant available over 3 years</span></p>
                 </div>
             </div>
         </section>
@@ -195,7 +217,7 @@
     </div>
 
     <footer class="text-center p-4 bg-white mt-8">
-        <p class="text-sm text-gray-500">This plan is a living document, designed to be adapted as the journey progresses.</p>
+        <p class="text-sm text-gray-500">Nancy Carter September 2025</p>
     </footer>
 
     <script>
@@ -248,11 +270,11 @@
             new Chart(ctx, {
                 type: 'radar',
                 data: {
-                    labels: ['Patient Impact', 'Work-Life Balance', 'Technical Skill', 'Career Flexibility', 'Emotional Demand'],
+                    labels: ['Sociability/People', 'Patient Impact', 'Work-Life Balance', 'Interest', 'Career Flexibility', 'Emotional Demand'],
                     datasets: [
                         {
                             label: 'Podiatry',
-                            data: [4, 5, 3, 4, 3],
+                            data: [5, 3, 5, 4, 5, 5],
                             backgroundColor: 'rgba(0, 63, 92, 0.2)',
                             borderColor: chartColors.blue1,
                             pointBackgroundColor: chartColors.blue1,
@@ -262,7 +284,7 @@
                         },
                         {
                             label: 'Therapeutic Radiography',
-                            data: [5, 3, 5, 2, 5],
+                            data: [2, 3, 4, 1, 2, 3],
                             backgroundColor: 'rgba(54, 110, 138, 0.2)',
                             borderColor: chartColors.blue2,
                             pointBackgroundColor: chartColors.blue2,
@@ -272,7 +294,7 @@
                         },
                         {
                             label: 'Adult Nursing',
-                            data: [5, 2, 3, 5, 4],
+                            data: [4, 5, 1, 4, 3, 1],
                             backgroundColor: 'rgba(124, 181, 211, 0.2)',
                             borderColor: chartColors.blue3,
                             pointBackgroundColor: chartColors.blue3,
@@ -310,24 +332,20 @@
         const renderTimelineChart = () => {
             const ctx = document.getElementById('actionTimelineChart').getContext('2d');
             
-            const startDate = new Date('2024-09-01');
+            const startDate = new Date('2025-09-01');
             const endDate = new Date('2026-09-01');
 
             const labels = [
-                "Succeed in Access Course",
-                "Initial Career Research",
-                "Contact University Admissions",
-                "Attend Virtual Open Days",
-                "Start Networking",
-                "Gain Relevant Experience",
-                "Attend Physical Open Days",
+                "Excel in Access Course",               
+                "Research Work Experience Opportunities",
+                "Attend Open Days",
+                "Secure Relevant Experience",
                 "Draft Personal Statement",
                 "Finalise & Submit UCAS",
-                "Prepare for Interviews",
                 "Apply for Funding",
-                "Inform University of Needs",
-                "Arrange Practicalities"
-            ].map(label => wrapLabel(label, 16));
+                "Accept place!",
+                "Arrange Practicalities, including fees and access",
+            ].map(label => wrapLabel(label, 28)); // Increase from 20 to 28
             
             new Chart(ctx, {
                 type: 'bar',
@@ -336,19 +354,15 @@
                     datasets: [{
                         label: 'Task Duration',
                         data: [
-                            ['2024-09-01', '2025-07-31'],
-                            ['2024-11-01', '2024-12-31'],
-                            ['2025-02-01', '2025-03-31'],
-                            ['2025-03-01', '2025-04-30'],
-                            ['2025-04-01', '2025-06-30'],
-                            ['2025-08-01', '2025-11-30'],
-                            ['2025-09-01', '2025-10-31'],
-                            ['2025-10-01', '2025-11-15'],
-                            ['2025-11-15', '2025-11-30'],
-                            ['2026-02-01', '2026-04-30'],
-                            ['2026-03-01', '2026-04-30'],
-                            ['2026-05-01', '2026-06-30'],
-                            ['2026-06-01', '2026-08-31']
+                            ['2025-09-01', '2026-06-30'], // Excel in Access Course
+                            ['2025-10-01', '2025-12-31'], // Research Work Experience Opportunities
+                            ['2025-10-01', '2026-03-30'], // Attend Open Days
+                            ['2026-04-01', '2026-06-30'], // Secure & Complete Work Experience
+                            ['2025-11-01', '2026-12-31'], // Draft Personal Statement
+                            ['2026-01-15', '2026-01-31'], // Finalise & Submit UCAS
+                            ['2026-02-01', '2026-03-31'], // Apply for Funding
+                            ['2026-05-01', '2026-06-01'], // Accept place!
+                            ['2026-06-01', '2026-09-01'], // Arrange Practicalities, including fees and access
                         ],
                         backgroundColor: chartColors.blue2,
                         borderColor: chartColors.blue1,
